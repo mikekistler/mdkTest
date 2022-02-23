@@ -1,7 +1,7 @@
 
 # Choose a PR Template
 
-Switch to "Preview" on this description then select one of the choices below.
+If you are opening this PR in GitHub, switch to "Preview" on this description then select one of the choices below.
 
 <a href="?expand=1&template=data_plane_template.md">Click here</a> to open a PR for a Data Plane API.
 
