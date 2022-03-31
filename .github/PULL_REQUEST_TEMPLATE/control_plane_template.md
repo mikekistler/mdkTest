@@ -1,4 +1,3 @@
-
 ## ARM API Information (Control Plane)
   
 <i>MSFT employees can try out our new experience at <b>[OpenAPI Hub](https://aka.ms/openapiportal) </b> - one location for using our validation tools and finding your workflow. 
@@ -14,16 +13,7 @@ Add a changelog entry for this PR by answering the following questions:
       - [ ] Other, please clarify
   2. When are you targeting to deploy the new service/feature to public regions? Please provide the date or, if the date is not yet available, the month.
   3. When do you expect to publish the swagger? Please provide date or, the the date is not yet available, the month.
-  4. If updating an existing version, please select the specific langauge SDKs and CLIs that must be refreshed after the swagger is published.
-      - [ ] SDK of .NET (need service team to ensure code readiness)
-      - [ ] SDK of Python
-      - [ ] SDK of Java
-      - [ ] SDK of Js
-      - [ ] SDK of Go
-      - [ ] PowerShell
-      - [ ] CLI
-      - [ ] Terraform
-      - [ ] No refresh required for updates in this PR
+  4. By default, Azure SDKs of all languages (.NET/Python/Java/JavaScript for both management-plane SDK and data-plane SDK, Go for management-plane SDK only ) MUST be refreshed with/after swagger of new version is published. If you prefer NOT to refresh any specific SDK language upon swagger updates in the current PR, please leave details with justification here. 
 
 ### Contribution checklist (MS Employees Only):
 - [ ] I commit to follow the [Breaking Change Policy](http://aka.ms/AzBreakingChangesPolicy) of "no breaking changes"
@@ -46,7 +36,7 @@ Otherwise your PR may be subject to ARM review requirements. Complete the follow
   - Adding a new service
   - Adding new API(s)
   - Adding a new API version
-    -[ ] To review changes efficiently, ensure you copy the existing version into the new directory structure for first commit and then push new changes, including version updates, in separate commits.
+    -[ ] To review changes efficiently, ensure you copy the existing version into the new directory structure for first commit and then push new changes, including version updates, in separate commits. You can use OpenAPIHub to initialize the PR for adding a new version. For more details refer to the [wiki](https://dev.azure.com/azure-sdk/internal/_wiki/wikis/internal.wiki/208/OpenAPI-Hub-Adding-new-API-version).
 
 - [ ] Ensure you've reviewed following [guidelines](https://aka.ms/rpguidelines) including [ARM resource provider contract](https://github.com/Azure/azure-resource-manager-rpc) and [REST guidelines](https://github.com/microsoft/api-guidelines/blob/vNext/azure/Guidelines.md). Estimated time (4 hours). This is required before you can request review from ARM API Review board.
 
